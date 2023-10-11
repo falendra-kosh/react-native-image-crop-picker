@@ -426,9 +426,7 @@ class PickerModule extends ReactContextBaseJavaModule implements ActivityEventLi
 
         final Uri uri = Uri.parse(options.getString("path"));
         
-        startCropping(activity, uri);
-        return null;
-          
+        startCropping(activity, uri);          
     }
 
     private String getBase64StringFromFile(String absoluteFilePath) {
